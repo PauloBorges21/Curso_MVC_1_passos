@@ -3,9 +3,9 @@
 
 class Usuarios extends model
 {
-    public function getNome()
+    public function getUsuario()
     {
-        $sql = "SELECT nome FROM tb_usuarios where id =1";
+        $sql = "SELECT * FROM tb_usuarios where id =1";
         $sql = $this->pdo->prepare($sql);
         $sql->execute();
         $result = $sql->fetch();

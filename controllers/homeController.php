@@ -10,7 +10,8 @@ class homeController extends controller
 
         $dados = [
             'quatidade' => $anuncios->getQuantidade(),
-            'nome'=>$usuarios->getNome(),
+            'nome'=>$usuarios->getUsuario(),
+            'telefone'=> $usuarios->getUsuario(),
             'idade'=>$usuarios->getIdade()
         ];
         $this->loadTemplate('home',$dados);
